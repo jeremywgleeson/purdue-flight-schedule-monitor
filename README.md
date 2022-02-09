@@ -12,8 +12,13 @@ To run independently:
 
 Running the script to check for changes has no advantage to just checking the website yourself (unless run at regular intervals). To learn why, read [About the code](#about-the-code)
 
-To build a custom docker image, make modifications then:  
-`docker build -t flight-monitor .`
+To build and run a custom docker image, make modifications then:  
+```
+# build image
+docker build -t flight-monitor .
+# run with environmental variables
+docker run --env EMAIL_CONTACT --env EMAIL_HOST --env EMAIL_PORT --env EMAIL_LOGIN --env EMAIL_PASSWORD --env TARGET_EMAIL -d flight-monitor
+```
 
 ## Deployment
 To deploy the docker image, use the image on your favourite cloud:  
