@@ -1,0 +1,1 @@
+*/5 * * * * bash -c ". /home/flight-monitor/.env; /usr/local/bin/python /home/flight-monitor/main.py > /home/flight-monitor/cron.log"

@@ -1,0 +1,17 @@
+# minimum time until cancelled appointment to notify in hours
+TIME_MIN: .5
+# maxiumum time until cancelled appointment to notify in hours
+TIME_MAX: 48
+# single target email to send deletions to, will be added to TARGET_EMAILS
+TARGET_EMAIL: null
+# target emails to send deletions to
+TARGET_EMAILS: []
+# planes to include, if empty include all except exclusions
+PLANE_INCLUDE:
+ - N560PU
+ - N564PU
+ - N273ND
+ - N3033T-PPI
+# planes to exclude, overwritten by PLANE_INCLUDE if it is set
+PLANE_EXCLUDE: []
+
