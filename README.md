@@ -22,7 +22,7 @@ docker run --env EMAIL_CONTACT --env EMAIL_HOST --env EMAIL_PORT --env EMAIL_LOG
 
 ## Deployment
 To deploy the docker image, use the image on your favourite cloud:  
-[Image on Dockerhub]()  
+[Image on Dockerhub](https://hub.docker.com/r/jeremygleeson/purdue-flight-schedule-monitor)  
 This image requires secrets passed as environmental variables in order to work correctly.
 
 If you prefer to build a custom image with secrets and config baked in, please do so.
